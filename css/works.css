@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    height: 20%;
+    position: relative;
+}
+
+.black_box {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    background-color: black;
+    height: 30%;
+    aspect-ratio: 1 / 1;
+
+    z-index: 1;
+}
+
+.title{
+    position:absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%, -25%);
+
+    height: 30%;
+
+    font-size: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_box{
+    min-height: 80%;
+    width:100%;
+    background-color: black;
+
+    position: relative;
+}
+
+.center_box{
+    position:absolute;
+
+    width:75%;
+    min-height: 100%;
+
+    left:50%;
+    transform: translateX(-50%);
+
+    background-color: aqua;
+}
+
+.icons{
+    width:100%;
+    height:100%;
+
+    background-color: yellow;
+}
