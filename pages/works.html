@@ -5,7 +5,8 @@
     <title>Sugiura_Portfolio_works</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="../css/works.css">
-    <script src="../js/works.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="../js/works.js"></script>
     <!-- pc size -->
 
 </head>
@@ -19,31 +20,36 @@
     <div class="first_box">
         <div class="center_box">
             <div class="icons_container">
-                <div class="icon"><div class="icon-bg"><div class="all">All</div></div></div>
-                <div class="icon"><div class="icon-bg"><img src="../img/React-icon.png"/></div></div>
-                <div class="icon"><div class="icon-bg"><img src="../img/nodejsStackedDark.jpg"/></div></div>
+                <div class="icon" id="all_tag"><div class="icon-bg"><div class="all">All</div></div></div>
+                <div class="icon" id="react_tag"><div class="icon-bg"><img src="../img/React-icon.png"/></div></div>
+                <div class="icon" id="nodejs_tag"><div class="icon-bg"><img src="../img/nodejsStackedDark.jpg"/></div></div>
             </div>
             <div class="under-box">
                 <div class="contents">
-                    <div class="article_container"><div class="article">
+                    <!--予約サイト-->
+                    <div class="article_container" data-category="react nodejs"><div class="article">
                         <img src="../img/Home.png" id="article_img"/>
-                        <div class="work_title">サンプル予約サイト</div>
-                        <div class="work_desc">
-                            <p>練習用に制作した予約サイト</p>
-                            <p>店舗一覧の表示、詳細確認、日時指定の予約登録が可能なSPA</p>
-                            <p>バックエンドと連携し、DBからの動的データ取得・保存を実現しています</p>
-                        </div>
-                        <div class="tech-box">
+                            <div class="work_title">サンプル予約サイト</div>
+                                <div class="work_desc">
+                                    <p>練習用に制作した予約サイト</p>
+                                    <p>店舗一覧の表示、詳細確認、日時指定の予約登録が可能なSPA</p>
+                                    <p>バックエンドと連携し、DBからの動的データ取得・保存を実現しています</p>
+                                </div>
+                            <div class="tech-box">
                             <div class="work_tech">
                                 <p>使用技術</p>
-                                <p>React Node.js MySQL</p>
+                                <p>React Node.js(express) MySQL</p>
                             </div>
                             <div class="git_link"><a href="https://github.com/Sugiura-Engineer/sample_ReservationSystem" target="_blank" rel="noopener noreferrer"><img src="../img/github-mark.png"/></a></div>
                         </div>
                     </div></div>
-                    <div class="article_container"></div>
-                    <div class="article_container"></div>
+                    <!--ピンポンゲームサイト-->
+                    <div class="article_container" data-category="nodejs"></div>
+                    <div class="article_container" data-category="nodejs"></div>
                 </div>
+                <div id="no_result">
+                    該当なし
+                  </div>
             </div>
         </div>
     </div>
