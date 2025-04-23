@@ -7,7 +7,12 @@ $(document).ready(function() { //$はjqueryを使いますという意味.docume
         if (clickedId === 'all_tag') {
             // Allを押したら全部表示
             $('.article_container').show();
-        } else if (clickedId === 'react_tag') {
+        } else if (clickedId === 'web_tag') {
+          // webタグを押したら
+          $('.article_container').hide(); // いったん全部消す
+          $('.article_container[data-category*="web"]').show(); // Reactだけ表示
+          noResultMessage();
+        }else if (clickedId === 'react_tag') {
             // Reactタグを押したら
             $('.article_container').hide(); // いったん全部消す
             $('.article_container[data-category*="react"]').show(); // Reactだけ表示
@@ -15,7 +20,7 @@ $(document).ready(function() { //$はjqueryを使いますという意味.docume
         } else if (clickedId === 'nodejs_tag') {
             // Node.jsタグを押したら
             $('.article_container').hide();
-            $('.article_container[data-category*="aaa"]').show();
+            $('.article_container[data-category*="nodejs"]').show();
             noResultMessage();
         }
     });
